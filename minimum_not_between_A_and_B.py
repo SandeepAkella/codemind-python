@@ -1,10 +1,13 @@
+
 n=int(input())
 a=list(map(int,input().split()))
-m,n=map(int,input().split())
-y=[]
+x,y=map(int,input().split())
+b=[]
 for i in a:
-    if i<m or i>n:
-        y.append(i)
-if len(y)==0:
+    if i<x or i>y:
+        b.append(i)
+if len(b)==0:
     print(-1)
-print(min(y))
+else:
+    print(min(b))
+
