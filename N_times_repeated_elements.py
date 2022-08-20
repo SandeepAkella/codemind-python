@@ -1,13 +1,13 @@
+
 n=int(input())
 a=list(map(int,input().split()))
 k=int(input())
-y=[]
+x=[]
 for i in a:
-    if a.count(i)==k:
-        y.append(i)
-if len(y)==0:
-    print(-1)
+    if a.count(i)==k and i not in x:
+        x.append(i)
+if len(x)==0:
+    print('-1')
 else:
-    y=set(y)
-    y=list(y)
-    print(*y)
+    print(*x)
+
