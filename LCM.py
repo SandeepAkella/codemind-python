@@ -1,13 +1,10 @@
-def lcm(x,y):
-   if x>y:
-       gr=x
-   else:
-       gr=y
-   while(True):
-       if((gr%x==0) and (gr%y==0)):
-           lcm=gr
-           break
-       gr+=1
-   return lcm
+
+def lcm(a,b):
+ c=b
+ while True:
+    if c%a==0 and c%b==0:
+        return c
+    c+=1
 a,b=map(int,input().split())
 print(lcm(a,b))
+
