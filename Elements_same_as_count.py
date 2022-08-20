@@ -1,11 +1,12 @@
 
 n=int(input())
 a=list(map(int,input().split()))
-y=[]
+x=[]
 for i in a:
-    if i==a.count(i) and i not in y:
-        y.append(i)
-if len(y)==0:
-    print(-1)
+    if i==a.count(i) and i not in x:
+        x.append(i)
+if len(x)==0:
+    print('-1')
 else:
-    print(*y)
+    print(*x)
+
