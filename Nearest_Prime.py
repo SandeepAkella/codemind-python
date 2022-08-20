@@ -1,3 +1,4 @@
+
 t=int(input())
 while t:
     a=int(input())
@@ -27,3 +28,5 @@ while t:
     else:
         print(pp)
     t-=1
+    
+
